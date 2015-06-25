@@ -1,0 +1,15 @@
+import:
+    - "%root_dir%/app/parameters.yml"
+
+debug: true
+mode: "development"
+
+# Paths
+app_dir:        "%root_dir%/app"
+data_dir:       "%root_dir%/data"
+cache_dir:      "%data_dir%/cache"
+migration_dir:  "%app_dir%/migrations"
+seed_dir:       "%app_dir%/seeds"
+
+# Routes
+routes:
