@@ -22,6 +22,6 @@ class Price extends Model
 
     public function resource()
     {
-        return $this->belongsToMany('LocalBooking\Model\Resource')->withPivot('options');
+        return $this->belongsToMany('LocalBooking\Model\Resource');
     }
 }
