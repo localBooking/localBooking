@@ -28,13 +28,14 @@ if (!empty($configuration)) {
     $app->database->bootEloquent();
 }
 
+$app->get('/', function () {
+    echo file_get_contents('index.html');
+});
+
 // load controller
 foreach($app->config('routes') as $class) {
     $ref = new ReflectionClass($class);
     if ($ref->implementsInterface('LocalBooking\Controller\ControllerInterface')) {
-        /**
-         * @var Controller $controller
-         */
         $controller = new $class();
         $controller->enable($app);
     }

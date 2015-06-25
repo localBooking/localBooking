@@ -1,5 +1,7 @@
 composer.phar
 vendor/
+node_modules/
+public/js/
 htdocs
 
 .idea
