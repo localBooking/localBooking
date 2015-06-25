@@ -3,7 +3,9 @@
   "description": "Resource Booking App",
   "license": "GPL-2.0",
   "require": {
-    "slim/slim": "~2.0"
+    "slim/slim": "~2.0",
+    "kirkbushell/eloquence": "dev-master",
+    "illuminate/database": "*"
   },
   "autoload": {
     "psr-0": {
