@@ -16,6 +16,7 @@ class CreatePricesTable extends Migration
                 $table->integer('quantity');
                 $table->float('price');
                 $table->float('tax_rate');
+                $table->integer('resource_id')->unsigned()->nullable();
                 $table->timestamps();
 
                 $table->foreign('resource_id')->references('id')->on('resources')->onDelete('cascade');

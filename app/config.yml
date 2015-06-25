@@ -1,8 +1,8 @@
 import:
     - "%root_dir%/app/parameters.yml"
 
-debug: true
-mode: "development"
+debug: %debug%
+mode: "%mode%"
 
 # Paths
 app_dir:        "%root_dir%/app"

@@ -8,6 +8,7 @@
     "illuminate/filesystem": "*",
     "kirkbushell/eloquence": "dev-master",
     "slim/slim": "~2.0",
+    "symfony/yaml": "2.7.*",
     "webmozart/console": "*"
   },
   "autoload": {

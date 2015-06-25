@@ -16,12 +16,11 @@ class CreateBookingsTable extends Migration
                 $table->dateTime('start');
                 $table->dateTime('end');
                 $table->boolean('confirmed');
+                $table->integer('resource_id')->unsigned()->nullable();
                 $table->timestamps();
 
                 $table->foreign('resource_id')->references('id')->on('resources')->onDelete('cascade');
             });
-
-
         }
     }
 
