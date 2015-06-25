@@ -1,5 +1,13 @@
 {
-    "require": {
-        "slim/slim": "~2.0"
+  "name": "local-booking/local-booking",
+  "description": "Resource Booking App",
+  "license": "GPL-2.0",
+  "require": {
+    "slim/slim": "~2.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "src/"
     }
+  }
 }
