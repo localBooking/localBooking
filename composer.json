@@ -2,10 +2,13 @@
   "name": "local-booking/local-booking",
   "description": "Resource Booking App",
   "license": "GPL-2.0",
+  "minimum-stability": "dev",
   "require": {
-    "slim/slim": "~2.0",
+    "illuminate/database": "*",
+    "illuminate/filesystem": "*",
     "kirkbushell/eloquence": "dev-master",
-    "illuminate/database": "*"
+    "slim/slim": "~2.0",
+    "webmozart/console": "*"
   },
   "autoload": {
     "psr-0": {
