@@ -18,11 +18,10 @@ class Price extends Model
     ];
 
     protected $hidden = [
-        'resource_id'
     ];
 
     public function resource()
     {
-        return $this->belongsTo('LocalBooking\Model\Resource');
+        return $this->belongsToMany('LocalBooking\Model\Resource')->withPivot('options');
     }
 }

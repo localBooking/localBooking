@@ -63,12 +63,10 @@ class DatabaseHandler
         if ($args->getOption('truncate')) {
             $io->writeLine('Truncate tables...');
             Capsule::connection()->statement('SET FOREIGN_KEY_CHECKS = 0;');
-            Capsule::table('timeslices')->truncate();
-            Capsule::table('activities')->truncate();
-            Capsule::table('projects')->truncate();
-            Capsule::table('services')->truncate();
-            Capsule::table('customers')->truncate();
-            Capsule::table('users')->truncate();
+            Capsule::table('resources')->truncate();
+            Capsule::table('prices')->truncate();
+            Capsule::table('resource_price')->truncate();
+            Capsule::table('bookings')->truncate();
             Capsule::connection()->statement('SET FOREIGN_KEY_CHECKS = 1;');
         }
 

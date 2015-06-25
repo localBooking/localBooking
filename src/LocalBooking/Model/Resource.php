@@ -22,7 +22,7 @@ class Resource extends Model
 
     public function prices()
     {
-        return $this->hasMany('LocalBooking\Model\Price');
+        return $this->belongsToMany('LocalBooking\Model\Price', 'resource_price');
     }
 
     public function bookings()
